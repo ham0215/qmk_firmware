@@ -63,7 +63,7 @@ https://docs.qmk.fm/#/keycodes
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCMD, XXXXXXX,  KC_SPC, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_PLUS, KC_BSLS, KC_LBRC, KC_RBRC, KC_COLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, CTL_T(KC_L), CTL_T(KC_K), CTL_T(KC_SCLN),       KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
+      KC_LSFT, XXXXXXX, XXXXXXX, LCTL(KC_L), LCTL(KC_K), LCTL(KC_SCLN),          KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
