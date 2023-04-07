@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX, LCTL(KC_LEFT), LCTL(KC_RIGHT),         KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,  KC_ENT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   G(KC_LEFT), G(KC_DOWN), G(KC_UP), G(KC_RIGHT), XXXXXXX, KC_RSFT,
+      KC_LSFT, XXXXXXX, XXXXXXX, LCTL(KC_L), LCTL(KC_K), LCTL(KC_SCLN),       G(KC_LEFT), G(KC_DOWN), G(KC_UP), G(KC_RIGHT), XXXXXXX, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL,   MO(3),  KC_TAB,     KC_SPC, _______, KC_LOPT
                                       //`--------------------------'  `--------------------------'
@@ -51,9 +51,9 @@ https://docs.qmk.fm/#/keycodes
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
             `,       !,       @,       #,       $,       %,                            ^,       &,       *,       (,       ),       =,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCMD, XXXXXXX,  KC_SPC, XXXXXXX, XXXXXXX, XXXXXXX,                            +,       ¥,       [,       ],       :,       ',
+      KC_LCMD,キャプチャ,  KC_SPC, XXXXXXX, KC_BSPC,  KC_ENT,                            +,       ¥,       [,       ],       :,       ',
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, 全角変換, カタカナ変換, 半角変換,                          |,       \,       {,       },       ;,       ~,
+      KC_LSFT,     動画, XXXXXXX, 全角変換, カタカナ変換, 半角変換,                          |,       \,       {,       },       ;,       ~,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
@@ -62,9 +62,9 @@ https://docs.qmk.fm/#/keycodes
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_GRV, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,  KC_EQL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCMD, XXXXXXX,  KC_SPC, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_PLUS, KC_BSLS, KC_LBRC, KC_RBRC, KC_COLN, KC_QUOT,
+      KC_LCMD,G(S(KC_4)),KC_SPC, XXXXXXX, KC_BSPC,  KC_ENT,                      KC_PLUS, KC_BSLS, KC_LBRC, KC_RBRC, KC_COLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, LCTL(KC_L), LCTL(KC_K), LCTL(KC_SCLN),          KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
+      KC_LSFT,G(S(KC_5)),XXXXXXX, LCTL(KC_L), LCTL(KC_K), LCTL(KC_SCLN),          KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
