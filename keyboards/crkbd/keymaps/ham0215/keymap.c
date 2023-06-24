@@ -76,11 +76,11 @@ https://docs.qmk.fm/#/keycodes
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCMD,G(S(KC_4)),G(S(KC_5)), KC_SPC, KC_BSPC, KC_ENT,                    KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_COLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, G(KC_Z),LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),          KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
+      KC_LSFT, G(KC_Z),LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),        KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
-  ),    KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT
+  ),
 
   [3] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
