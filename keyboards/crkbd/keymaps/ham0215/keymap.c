@@ -52,7 +52,7 @@ https://docs.qmk.fm/#/keycodes
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX, LCTL(KC_LEFT), LCTL(KC_RIGHT),         KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_SCLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX,LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),   KC_BSLS,LOPT(KC_BSLS), KC_LBRC, KC_RBRC, KC_PIPE, KC_RSFT,
+      KC_LSFT, XXXXXXX,LCTL(KC_L),LCTL(KC_K),LCTL(KC_SCLN),LCTL(KC_QUOT),   KC_BSLS,LOPT(KC_BSLS), KC_LBRC, KC_RBRC, KC_PIPE, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL,   MO(3),  KC_TAB,     KC_SPC, _______, KC_LOPT
                                       //`--------------------------'  `--------------------------'
@@ -76,7 +76,7 @@ https://docs.qmk.fm/#/keycodes
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCMD,G(S(KC_4)),G(S(KC_5)), KC_SPC, KC_BSPC, KC_ENT,                    KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_COLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, G(KC_Z),LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),        KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
+      KC_LSFT, G(KC_Z),LCTL(KC_L),LCTL(KC_K),LCTL(KC_SCLN),LCTL(KC_QUOT),        KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
