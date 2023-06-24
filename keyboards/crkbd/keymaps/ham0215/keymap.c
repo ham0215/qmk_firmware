@@ -40,7 +40,7 @@ https://docs.qmk.fm/#/keycodes
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX,LCTL(KC_LEFT),LCTL(KC_RIGHT),           KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT,       :,       ',
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, 全角変換,カタカナ変換,半角カナ, 半角変換,                      XXXXXXX, XXXXXXX,       {,       },       |, KC_RSFT,
+      KC_LSFT, XXXXXXX, 全角変換,カタカナ変換,半角カナ, 半角変換,                            ¥,       \,       [,       ],       |, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
@@ -52,7 +52,7 @@ https://docs.qmk.fm/#/keycodes
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX, LCTL(KC_LEFT), LCTL(KC_RIGHT),         KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_COLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX,LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),        XXXXXXX, XXXXXXX, KC_LCBR, KC_RCBR, KC_RCBR, KC_RSFT,
+      KC_LSFT, XXXXXXX,LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),   KC_BSLS,LOPT(KC_BSLS), KC_LBRC, KC_RBRC, KC_PIPE, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL,   MO(3),  KC_TAB,     KC_SPC, _______, KC_LOPT
                                       //`--------------------------'  `--------------------------'
