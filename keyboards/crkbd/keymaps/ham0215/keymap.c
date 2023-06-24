@@ -36,9 +36,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /*
 https://docs.qmk.fm/#/keycodes
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-            `,       1,       2,       3,       4,       5,                            6,       7,       8,       9,       0,       +,
+            `,       1,       2,       3,       4,       5,                            6,       7,       8,       9,       0,       =,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX,LCTL(KC_LEFT),LCTL(KC_RIGHT),           KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT,       :,       ',
+      KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX,LCTL(KC_LEFT),LCTL(KC_RIGHT),           KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT,       ;,       ',
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, 全角変換,カタカナ変換,半角カナ, 半角変換,                            ¥,       \,       [,       ],       |, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
@@ -48,9 +48,9 @@ https://docs.qmk.fm/#/keycodes
 
   [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_PLUS,
+       KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_EQL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX, LCTL(KC_LEFT), LCTL(KC_RIGHT),         KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_COLN, KC_QUOT,
+      KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX, LCTL(KC_LEFT), LCTL(KC_RIGHT),         KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_SCLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX,LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),   KC_BSLS,LOPT(KC_BSLS), KC_LBRC, KC_RBRC, KC_PIPE, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
