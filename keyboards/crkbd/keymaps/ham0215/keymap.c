@@ -36,11 +36,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /*
 https://docs.qmk.fm/#/keycodes
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-          ESC,       1,       2,       3,       4,       5,                            6,       7,       8,       9,       0, KC_BSPC,
+            `,       1,       2,       3,       4,       5,                            6,       7,       8,       9,       0, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX,LCTL(KC_LEFT),LCTL(KC_RIGHT),           KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,  KC_ENT,
+      KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX,LCTL(KC_LEFT),LCTL(KC_RIGHT),           KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT,       :,       ',
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, 全角変換, カタカナ変換, 半角変換,                G(KC_LEFT), G(KC_DOWN), G(KC_UP), G(KC_RIGHT), XXXXXXX, KC_RSFT,
+      KC_LSFT, XXXXXXX, 全角変換,カタカナ変換,半角カナ, 半角変換,                            +, XXXXXXX,       {,       },       |, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
@@ -48,11 +48,11 @@ https://docs.qmk.fm/#/keycodes
 
   [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-       KC_ESC,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC,
+       KC_GRV,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX, LCTL(KC_LEFT), LCTL(KC_RIGHT),         KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,  KC_ENT,
+      KC_LCMD, XXXXXXX, XXXXXXX, XXXXXXX, LCTL(KC_LEFT), LCTL(KC_RIGHT),         KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_COLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, XXXXXXX, XXXXXXX, LCTL(KC_L), LCTL(KC_K), LCTL(KC_SCLN),       G(KC_LEFT), G(KC_DOWN), G(KC_UP), G(KC_RIGHT), XXXXXXX, KC_RSFT,
+      KC_LSFT, XXXXXXX,LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),        KC_PLUS, XXXXXXX, KC_LCBR, KC_RCBR, KC_RCBR, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL,   MO(3),  KC_TAB,     KC_SPC, _______, KC_LOPT
                                       //`--------------------------'  `--------------------------'
@@ -63,9 +63,9 @@ https://docs.qmk.fm/#/keycodes
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
             `,       !,       @,       #,       $,       %,                            ^,       &,       *,       (,       ),       =,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCMD,キャプチャ,    動画,  KC_SPC, KC_BSPC,  KC_ENT,                            +,       ¥,       [,       ],       :,       ',
+      KC_LCMD,キャプチャ,    動画,  KC_SPC, KC_BSPC,  KC_ENT,                           <-,       ↓,       ↑,      ->,       :,       ',
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, G(KC_Z), XXXXXXX,LCTL(KC_C),カタカナ変換,半角変換,                         |,       \,       {,       },       ;,       ~,
+      KC_LSFT, G(KC_Z), 全角変換,カタカナ変換,半角カナ, 半角変換,                            |,       \,       {,       },       ;,       ~,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
@@ -74,19 +74,19 @@ https://docs.qmk.fm/#/keycodes
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_GRV, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,  KC_EQL,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LCMD,G(S(KC_4)),G(S(KC_5)), KC_SPC, KC_BSPC, KC_ENT,                    KC_PLUS, KC_BSLS, KC_LBRC, KC_RBRC, KC_COLN, KC_QUOT,
+      KC_LCMD,G(S(KC_4)),G(S(KC_5)), KC_SPC, KC_BSPC, KC_ENT,                    KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_COLN, KC_QUOT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      KC_LSFT, G(KC_Z),XXXXXXX, LCTL(KC_C), LCTL(KC_K), LCTL(KC_SCLN),          KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
+      KC_LSFT, G(KC_Z),LCTL(KC_L),LCTL(KC_K),LCTL(KC_COLN),LCTL(KC_QUOT),          KC_PIPE, LOPT(KC_BSLS), KC_LCBR, KC_RCBR, KC_SCLN, KC_TILD,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           KC_LCTL, _______,  KC_TAB, LOPT(KC_SPC), MO(3), KC_LOPT
                                       //`--------------------------'  `--------------------------'
-  ),
+  ),    KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT
 
   [3] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
        KC_ESC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R, XXXXXXX, KC_BSPC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN2, KC_BTN1,                      KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, XXXXXXX,  KC_ENT,
+      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN2, KC_BTN1,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX,  KC_ENT,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      KC_BTN1, KC_BTN2, XXXXXXX, XXXXXXX, XXXXXXX, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
